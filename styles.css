@@ -1,0 +1,84 @@
+/* ====== COLORES BASE ====== */
+:root {
+    --primary: #a96fc3;
+    --primary-light: #d9b8eb;
+    --primary-dark: #7d4c96;
+    --white: #ffffff;
+    --soft-bg: #f5effa;
+}
+
+/* ====== BODY ====== */
+body {
+    background-color: var(--soft-bg);
+    font-family: Arial, sans-serif;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-light) !important;
+}
+
+/* ====== TITULOS ====== */
+h1, h3 {
+    color: var(--primary-dark);
+}
+
+/* ====== SECCIONES (SIN BORDE, CON FONDO) ====== */
+.container .mb-4 {
+    background-color: var(--primary-light);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.container .mb-4:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* ====== IMAGENES ====== */
+img {
+    border-radius: 10px;
+}
+
+/* ====== CAROUSEL ====== */
+.carousel-item img {
+    border-bottom: 4px solid var(--primary);
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+/* ====== CENTRAR TEXTO ====== */
+.container {
+    text-align: center;
+}
+
+/* ====== IMÁGENES MÁS GRANDES Y CENTRADAS ====== */
+.container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;   /* más grandes */
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ====== ESPACIADO BONITO ====== */
+.mb-4 {
+    padding: 25px;
+}
